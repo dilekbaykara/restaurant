@@ -2,12 +2,25 @@ import { contact } from "./pages/contact"
 import { home } from "./pages/home"
 import { menu } from "./pages/menu"
 import "./style.css"
+import background from "./images/background.jpg"
+
+
 
 var content = document.getElementById("content")
+
+content.style.backgroundImage = `url("${background}")`;
+console.log(background)
+
+var tabs = document.createElement("div")
+tabs.classList.add("tabs")
+
+
+
+
 var homePageContents = home()
 var menuPageContents = menu()
 var contactPageContents = contact()
-var tabs = document.createElement("div")
+
 var pageContent = document.createElement("div")
 
 var homePageTab = document.createElement("div")
@@ -28,6 +41,8 @@ content.appendChild(tabs)
 content.appendChild(pageContent)
 
 pageContent.appendChild(homePageContents)
+
+
 
 homePageTab.addEventListener("click", () => {
   pageContent.innerHTML = ""

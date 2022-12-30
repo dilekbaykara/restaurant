@@ -1,29 +1,70 @@
+html {
+  min-height: 100%;
+}
+
 h1 {
-font-family: bely-display,sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
 }
 
 #content {
-color: #284B63;
+  color: #1b4b4f;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  padding-top: 15px;
+  align-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  padding-bottom: 14px;
 }
 
 body {
-    background-color: #8FB8DE;
+  background-color: #96c9cd;
+  margin: 0;
+  min-height: 100vh;
 }
 
-div {
-display: flex;
-align-content: center;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-font-family: bely-display,sans-serif;
-font-weight: 400;
-font-size: 20px;
-font-style: normal;
+.tabs {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  gap: 20px;
 }
+
+.tabs div {
+  cursor: pointer;
+}
+
+/*div {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: bely-display, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+}*/
 
 img {
-border-radius: 22px;    
+  border-radius: 22px;
 }

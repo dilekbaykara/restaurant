@@ -1,6 +1,7 @@
+import main from "../images/main.png"
 export function home() {
   var imgHome = document.createElement("img");
-  imgHome.src = "../images/main.png"
+  imgHome.src = main
   var h1 = document.createElement("h1");
   var page = document.createElement("div");
 
